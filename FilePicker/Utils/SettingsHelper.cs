@@ -41,7 +41,8 @@ namespace FilePicker.Utils
 
         public static string AzureADAuthority
         {
-            get { return string.Format("https://login.microsoftonline.com/{0}/", AzureAdTenantId); }
+            //get { return string.Format("https://login.microsoftonline.com/{0}/", AzureAdTenantId); }
+            get { return string.Format("https://login.microsoftonline.com/common/"); }
         }
 
         public static string ClaimTypeObjectIdentifier
@@ -57,6 +58,8 @@ namespace FilePicker.Utils
         public static string DiscoveryEndpoint
         {
             get { return "https://api.office.com/discovery/v1.0/me/"; }
+            // get { return "https://api.office.com/discovery/"; }
+            
         }
     }
 }

@@ -28,6 +28,7 @@ namespace FilePicker.Controllers
             var dcrRoot = await discovery.DiscoverCapabilityAsync("RootSite");
             var dcrMy = await discovery.DiscoverCapabilityAsync("MyFiles");
 
+            
             // get access token for the RootSite
             var rootToken = await GetAccessToken(dcrRoot.ServiceResourceId);
             var myToken = await GetAccessToken(dcrMy.ServiceResourceId);
