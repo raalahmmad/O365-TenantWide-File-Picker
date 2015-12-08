@@ -24,7 +24,8 @@
                 queryOneDrive(null);
             }
             else {
-                $scope.breadcrumb = [{ name: "Sites", id: null, type: "root", path: null }];
+                // $scope.breadcrumb = [{ name: "Sites", id: null, type: "root", path: null }];
+                $scope.breadcrumb = [{ name: "Site Collections", id: null, type: "root", path: null }];
                 querySites();
             }
         };
